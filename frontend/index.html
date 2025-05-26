@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Keyword Research Agent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 AI Keyword Research Agent</h1>
+        
+        <div class="input-group">
+            <input type="text" id="category" placeholder="Enter your category (e.g., 'video editing apps')">
+            <input type="text" id="platform" placeholder="Target platform (e.g., 'TikTok')">
+            <button id="generateBtn">Generate Keywords</button>
+            <button id="reportBtn">Generate Full Report</button>
+        </div>
+
+        <div class="loading" id="loading">⏳ AI Agent is working...</div>
+        <div class="error" id="error"></div>
+
+        <div class="results-section" id="results" style="display: none;">
+            <div class="tabs">
+                <button class="tab-button active" data-tab="seed">Seed Keywords</button>
+                <button class="tab-button" data-tab="competitor">Competitor Gaps</button>
+                <button class="tab-button" data-tab="questions">Questions</button>
+                <button class="tab-button" data-tab="report">Full Report</button>
+            </div>
+
+            <div id="seed" class="tab-content">
+                <div class="result-card">
+                    <h3 class="result-title">🌟 Top Seed Keywords</h3>
+                    <div class="result-content" id="seed-content"></div>
+                </div>
+            </div>
+
+            <div id="competitor" class="tab-content" style="display: none;">
+                <div class="result-card">
+                    <h3 class="result-title">🎯 Competitor Opportunities</h3>
+                    <div class="result-content" id="competitor-content"></div>
+                </div>
+            </div>
+
+            <div id="questions" class="tab-content" style="display: none;">
+                <div class="result-card">
+                    <h3 class="result-title">❓ Key Questions</h3>
+                    <div class="result-content" id="questions-content"></div>
+                </div>
+            </div>
+
+            <div id="report" class="tab-content report-section" style="display: none;">
+                <div class="result-card">
+                    <h3 class="result-title">📈 Strategic Report</h3>
+                    <div class="result-content">
+                        <pre id="report-content"></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
