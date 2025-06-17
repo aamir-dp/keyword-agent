@@ -171,3 +171,4 @@ async def health_check():
         "model": "gemini-pro",
         "database_connected": bool(supabase)
     }
+print("hello this is to test the rabit code review code!!!")
