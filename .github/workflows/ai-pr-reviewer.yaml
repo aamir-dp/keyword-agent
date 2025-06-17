@@ -20,6 +20,9 @@ jobs:
           review_simple_changes: false
           review_comment_lgtm: false
           path_filters: |
-            "**/*.js"
             "README.md"
+            "**/*.py"
+            "**/*.js"
+            "**/*.html"
+            "**/*.css"
 
